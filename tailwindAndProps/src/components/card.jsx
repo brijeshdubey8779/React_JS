@@ -2,8 +2,8 @@ import React from 'react'
 
 function Card({name,imageURL,btnText="Click me"}) {
     return (
-        <div className='flex'>
-            <div className="relative h-[400px] w-[300px] rounded-md inline">
+        <div className='inline-flex flex-wrap  bg-slate-400 h-[30%] border-2 '>
+            <div className="relative h-[400px] w-[300px] rounded-md m-2">
             <img
               src={imageURL}
               alt="AirMax Pro"
@@ -16,7 +16,7 @@ function Card({name,imageURL,btnText="Click me"}) {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                 debitis?
               </p>
-              <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+              <button className="m-2 p-1 rounded-md inline-flex cursor-pointer items-center text-sm font-semibold bg-black  text-white">
                 {btnText} →
               </button>
             </div>
